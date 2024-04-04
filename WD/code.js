@@ -27,8 +27,8 @@ var sname=["Ban Ja tu meri Rani",
 "suit suit"
 ];
 
-var sd=[,
-"Artists: Ash King, Jigar Saraiya<br>Featured artists: Sidharth Malhotra"Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017", Raftaar<br>Movie: A Gentleman<br>Released: 2017"
+var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
+"Artists: Ash King, Jigar Saraiya<br>Featured artists: Sidharth Malhotra, Raftaar<br>Movie: A Gentleman<br>Released: 2017"
 ,"Artists: Ash King, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Awards: Zee Cine Award for Song of the Year"
 ,"Artist: Arijit Singh<br>Movie: Meri Pyaari Bindu<br>Released: 2017<br>Nominations: Mirchi Music Awards for Best Song Producer - Programming & Arranging"
 ,"Artist: Arijit Singh<br>Movie: Raabta<br>Released: 2017"
@@ -37,7 +37,7 @@ var sd=[,
 ,"Artist: KK<br>Movie: Shab<br>Released: 2017"
 ,"Artist: Arijit Singh<br>Movie: Shab<br>Released: 2017"
 ,"Artists: Arijit Singh, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Written: 2001 (lyrics)<br>Lyricist(s): Manoj Muntashir<br>Composer(s): Mithoon"
-,"Artist: Guru Randhawa<br>Movie: Hindi Medium<br>Released: 2017"];
+,"Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017"];
 
 var bool=[];
 for(var i=0; i<sd.length; i++)
@@ -55,8 +55,8 @@ var icon=["images\\\\1.jpg",
 "images\\\\10.jpg",
 "images\\\\11.jpg"];
 
-var mood=[["1","2","3"],["4","5",,"11"],["6","7","8"],["9","10"]];
-var mmm=["1.png","1.png","1.png","2.png","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
+var mood=[["1","2","3"],["4","5","11"],["6","7","8"],["9","10"]];
+var mmm=["1.png","1.png","1.png","2","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
 
 var songs=new Array(icon.length);
 for (var i = 0; i<icon.length; i++) {
@@ -81,7 +81,7 @@ for (var i = 0; i<icon.length; i++) {
 	};
 	document.getElementById('c'+i).onclick=function(){
 		addq(this);
-	};	
+	};
 }
 
 
