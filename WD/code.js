@@ -11,7 +11,8 @@ var path=["songs\\ban ja rani.mp3"
 ,"songs\\mercy.mp3"
 ,"songs\\musafir.mp3"
 ,"songs\\o sathi.mp3"
-,"songs\\phir bhi.mp3"];
+,"songs\\phir bhi.mp3"
+,"songs\\suit suit.mp3"];
 
 var sname=["Ban Ja tu meri Rani",
 "Banduk Meri Laila",
@@ -22,11 +23,12 @@ var sname=["Ban Ja tu meri Rani",
 "mercy",
 "musafir",
 "o sathi",
-"Phir Bhi"
+"Phir Bhi",
+"suit suit"
 ];
 
-var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
-"Artists: Ash King, Jigar Saraiya<br>Featured artists: Sidharth Malhotra, Raftaar<br>Movie: A Gentleman<br>Released: 2017"
+var sd=[,
+"Artists: Ash King, Jigar Saraiya<br>Featured artists: Sidharth Malhotra"Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017", Raftaar<br>Movie: A Gentleman<br>Released: 2017"
 ,"Artists: Ash King, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Awards: Zee Cine Award for Song of the Year"
 ,"Artist: Arijit Singh<br>Movie: Meri Pyaari Bindu<br>Released: 2017<br>Nominations: Mirchi Music Awards for Best Song Producer - Programming & Arranging"
 ,"Artist: Arijit Singh<br>Movie: Raabta<br>Released: 2017"
@@ -34,7 +36,8 @@ var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
 ,"Artist: Badshah<br>Released: 2017<br>Nominations: Mirchi Music Awards for Best Song Engineer - Recording and Mixing"
 ,"Artist: KK<br>Movie: Shab<br>Released: 2017"
 ,"Artist: Arijit Singh<br>Movie: Shab<br>Released: 2017"
-,"Artists: Arijit Singh, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Written: 2001 (lyrics)<br>Lyricist(s): Manoj Muntashir<br>Composer(s): Mithoon"];
+,"Artists: Arijit Singh, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Written: 2001 (lyrics)<br>Lyricist(s): Manoj Muntashir<br>Composer(s): Mithoon"
+,"Artist: Guru Randhawa<br>Movie: Hindi Medium<br>Released: 2017"];
 
 var bool=[];
 for(var i=0; i<sd.length; i++)
@@ -49,10 +52,11 @@ var icon=["images\\\\1.jpg",
 "images\\\\7.jpg",
 "images\\\\8.jpg",
 "images\\\\9.jpg",
-"images\\\\10.jpg"];
+"images\\\\10.jpg",
+"images\\\\11.jpg"];
 
-var mood=[["1","2","3"],["4","5"],["6","7","8"],["9","10"]];
-var mmm=["1.png","1.png","1.png","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
+var mood=[["1","2","3"],["4","5",,"11"],["6","7","8"],["9","10"]];
+var mmm=["1.png","1.png","1.png","2.png","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
 
 var songs=new Array(icon.length);
 for (var i = 0; i<icon.length; i++) {
