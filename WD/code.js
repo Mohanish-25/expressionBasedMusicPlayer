@@ -12,7 +12,15 @@ var path=["songs\\ban ja rani.mp3"
 ,"songs\\musafir.mp3"
 ,"songs\\o sathi.mp3"
 ,"songs\\phir bhi.mp3"
-,"songs\\suit suit.mp3"];
+,"songs\\Pasoori.mp3"
+,"songs\\Naina.mp3"
+,"songs\\Perfect.mp3"
+,"songs\\Bekhay.mp3"
+,"songs\\Tujhe Kitna Chahne Lage.mp3"
+,"songs\\Senorita.mp3"
+,"songs\\Tum Se Hi.mp3"
+,"songs\\Aao Milo Chalo.mp3"
+,"songs\\Main Rang Sharbaton Ka Reprise.mp3"];
 
 var sname=["Ban Ja tu meri Rani",
 "Banduk Meri Laila",
@@ -24,8 +32,15 @@ var sname=["Ban Ja tu meri Rani",
 "musafir",
 "o sathi",
 "Phir Bhi",
-"suit suit"
-];
+"Pasoori",
+"Naina",
+"Perfect",
+"Bekhayali",
+"Tujhe Kitna Chahne Lage",
+"Senorita",
+"Tum Se Hi",
+"Aao Milo Chalo",
+"Main Rang Sharbaton Ka Reprise",];
 
 var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
 "Artists: Ash King, Jigar Saraiya<br>Featured artists: Sidharth Malhotra, Raftaar<br>Movie: A Gentleman<br>Released: 2017"
@@ -37,7 +52,15 @@ var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
 ,"Artist: KK<br>Movie: Shab<br>Released: 2017"
 ,"Artist: Arijit Singh<br>Movie: Shab<br>Released: 2017"
 ,"Artists: Arijit Singh, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Written: 2001 (lyrics)<br>Lyricist(s): Manoj Muntashir<br>Composer(s): Mithoon"
-,"Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017"];
+,"Artists: Shae Gill, Ali Sethi"
+,"Artist: Diljit Dosanjh"
+,"Artist: Ed Sheeran"
+,"Artist: Sachet Tandon, "
+,"Artist: Arijit Singh"
+,"Artist: Farhan Akhtar, Hrithik Roshan"
+,"Artist: Pritam, Mohit Chauhan"
+,"Artist: Pritam, Shaan"
+,"Artist: Arijit Singh, Pritam"];
 
 var bool=[];
 for(var i=0; i<sd.length; i++)
@@ -53,10 +76,18 @@ var icon=["images\\\\1.jpg",
 "images\\\\8.jpg",
 "images\\\\9.jpg",
 "images\\\\10.jpg",
-"images\\\\11.jpg"];
+"images\\\\12.png",
+"images\\\\13.png",
+"images\\\\14.png",
+"images\\\\15.png",
+"images\\\\16.png",
+"images\\\\21.png",
+"images\\\\22.png",
+"images\\\\23.png",
+"images\\\\24.png",];
 
-var mood=[["1","2","3"],["4","5","11"],["6","7","8"],["9","10"]];
-var mmm=["1.png","1.png","1.png","2","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
+var mood=[["1","7","12","13","15"],["2","6","10","21","22"],["4","9","14","23"],["3","5","8","16","24"]];
+var mmm=["2.png","1.png","4.png","3.png","4.png","2.png","1.png","4.png","3.png","2.png","1.png","1.png","3.png","1.png","4.png","2.png","2.png","3.png","4.png"];
 
 var songs=new Array(icon.length);
 for (var i = 0; i<icon.length; i++) {
@@ -81,7 +112,7 @@ for (var i = 0; i<icon.length; i++) {
 	};
 	document.getElementById('c'+i).onclick=function(){
 		addq(this);
-	};
+	};	
 }
 
 
@@ -98,16 +129,15 @@ function setmod(elem){
 }
 
 function play(elem){
-	console.log(elem.id);
-	var x=elem.id.charAt(1);
-	var z=songs[x][0];
-	document.getElementById("sname").innerHTML=sname[x];
-	document.getElementById("sel").src= z;
-	document.getElementById("main_slider").load();
-	document.getElementById("main_slider").play();
-	document.getElementById("emoji").style.backgroundImage="url('"+songs[x][3]+"')";
-	songrun=true;
-
+    console.log(elem.id);
+    var x = parseInt(elem.id.substring(1));
+    var z = songs[x][0];
+    document.getElementById("sname").innerHTML = sname[x];
+    document.getElementById("sel").src = z;
+    document.getElementById("main_slider").load();
+    document.getElementById("main_slider").play();
+    document.getElementById("emoji").style.backgroundImage = "url('" + songs[x][3] + "')";
+    songrun = true;
 }
 
 var eqc=1;

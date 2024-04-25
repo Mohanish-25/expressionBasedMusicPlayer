@@ -40,7 +40,7 @@
 		}*/
 body{
 	padding: 0px;
-	background-image: url("background.jpg");
+	background-image: url("backkk.jpg");
 	background-attachment: fixed;
 	height:100%;
 }
@@ -101,7 +101,7 @@ body{
 		width: 50px;
 		margin-left: 16%;
 		margin-top: 55%;
-		z-index: 2;
+		z-index: -2;
 	}
 	.play:focus{
 		outline: none;
@@ -131,7 +131,7 @@ body{
 		width: 50px;
 		margin-left: 13%;
 		margin-top: 55%;
-		z-index: 2;
+		z-index: -2;
 	}
 	.add:focus{
 		outline: none;
@@ -146,3 +146,9 @@ body{
 		border-top-right-radius: 50%;
 		
 	}
+	.back{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
     # -*- coding: utf-8 -*-
 """
-Created on Sat Sep 29 15:50:13 2018
-
-@author: AmeeYash
+@author: ATHARVA SHINDE, SIDDHANT SHINDE
 """
 import cv2
 import argparse
